@@ -1,6 +1,6 @@
 {
   "name": "@pelumi_coder/react-native-floating-bubble",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A floating bubble component for React Native (compatible with 0.76+). Fork of hybriteq/react-native-floating-bubble",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   "author": "",
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.79.1"
+    "react-native": ">=0.76.0"
   },
   "repository": {
     "type": "git",
