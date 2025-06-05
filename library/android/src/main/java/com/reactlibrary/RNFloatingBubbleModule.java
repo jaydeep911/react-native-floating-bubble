@@ -28,6 +28,10 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
   private final ReactApplicationContext reactContext;
   private BubbleLayout bubbleView;
 
+  // Add these lines to store last position
+  private int lastX = 0;
+  private int lastY = 0;
+
   public RNFloatingBubbleModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
@@ -59,6 +63,11 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
       // Bubble already exists, do not create another
       promise.resolve("");
       return;
+    }
+      // Use last position if available
+    if (lastX != 0 || lastY != 0) {
+        x = lastX;
+        y = lastY;
     }
     this.addNewBubble(x, y);
     promise.resolve("");
@@ -110,6 +119,8 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
     bubbleView.setOnBubbleRemoveListener(new BubbleLayout.OnBubbleRemoveListener() {
       @Override
       public void onBubbleRemoved(BubbleLayout bubble) {
+        lastX = bubble.getX();
+        lastY = bubble.getY();
         bubbleView = null;
         sendEvent("floating-bubble-remove");
       }
