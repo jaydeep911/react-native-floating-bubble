@@ -1,0 +1,26 @@
+{
+  "name": "@pelumi_coder/react-native-floating-bubble",
+  "version": "1.0.9",
+  "description": "A floating bubble component for React Native (compatible with 0.76+). Fork of hybriteq/react-native-floating-bubble",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "floating-bubble",
+    "chat-head",
+    "android",
+    "overlay",
+    "react-native-module"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": ">=0.76.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zeus-coder/react-native-floating-bubble.git"
+  }
+}
