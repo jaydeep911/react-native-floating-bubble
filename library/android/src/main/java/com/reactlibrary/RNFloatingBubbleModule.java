@@ -55,11 +55,16 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
   @ReactMethod // Notates a method that should be exposed to React
   public void showFloatingBubble(int x, int y, final Promise promise) {
     try {
-      this.addNewBubble(x, y);
+    if (bubbleView != null) {
+      // Bubble already exists, do not create another
       promise.resolve("");
-    } catch (Exception e) {
-      promise.reject("");
+      return;
     }
+    this.addNewBubble(x, y);
+    promise.resolve("");
+  } catch (Exception e) {
+    promise.reject("");
+  }
   }  
 
   @ReactMethod // Notates a method that should be exposed to React
@@ -131,8 +136,8 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
     if(bubbleView != null){
       try{
         bubblesManager.removeBubble(bubbleView);
-      } catch(Exception e){
-
+        bubbleView=null;
+      } catch(Exception e){ 
       }
     }
   }
