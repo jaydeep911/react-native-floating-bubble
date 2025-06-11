@@ -2,7 +2,8 @@
   "name": "@pelumi_coder/react-native-floating-bubble",
   "version": "1.0.9",
   "description": "A floating bubble component for React Native (compatible with 0.76+). Fork of hybriteq/react-native-floating-bubble",
-  "main": "index.js",
+  "main": "library/index.js",
+  "react-native": "library/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +22,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Zeus-coder/react-native-floating-bubble.git"
-  }
+    "url": "https://github.com/jaydeep911/react-native-floating-bubble"
+  },
+  "files": [
+    "library"
+  ]
 }
