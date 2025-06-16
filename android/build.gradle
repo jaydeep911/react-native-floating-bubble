@@ -42,10 +42,7 @@ dependencies {
     implementation 'com.facebook.react:react-native:+'
     //compile 'com.txusballesteros:bubbles:1.2.1',
     // compile 'com.txusballesteros:bubbles:1.2.1'
-    // implementation 'com.github.txusballesteros:bubbles-for-android:develop-SNAPSHOT'
-   
-    implementation 'com.github.txusballesteros:bubbles-for-android:+'
-
-    
+    // implementation 'com.github.txusballesteros:bubbles-for-android:develop-SNAPSHOT' 
+    implementation 'com.github.txusballesteros:bubbles-for-android:0d00ebc68b'  
 }
   
