@@ -44,7 +44,7 @@ dependencies {
     // compile 'com.txusballesteros:bubbles:1.2.1'
     // implementation 'com.github.txusballesteros:bubbles-for-android:develop-SNAPSHOT' 
     // implementation 'com.github.txusballesteros:bubbles-for-android:0d00ebc68b'  
-    implementation 'com.github.jaydeep911:bubbles-for-android:v1.0.0'
+    	        implementation 'com.github.jaydeep911:bubbles-for-android:develop-0df5db1679-1'
 
 }
   
