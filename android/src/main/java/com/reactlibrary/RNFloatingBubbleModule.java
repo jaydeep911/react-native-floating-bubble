@@ -65,10 +65,10 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
       return;
     }
       // Use last position if available
-    if (lastX != 0 || lastY != 0) {
-        x = lastX;
-        y = lastY;
-    }
+    // if (lastX != 0 || lastY != 0) {
+    //     x = lastX;
+    //     y = lastY;
+    // }
     this.addNewBubble(x, y);
     promise.resolve("");
   } catch (Exception e) {
@@ -121,7 +121,6 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
       public void onBubbleRemoved(BubbleLayout bubble) {
         // lastX = bubble.getX();
         // lastY = bubble.getY();
-        bubbleView = null;
         sendEvent("floating-bubble-remove");
       }
     });
