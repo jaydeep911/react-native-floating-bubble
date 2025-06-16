@@ -119,8 +119,8 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
     bubbleView.setOnBubbleRemoveListener(new BubbleLayout.OnBubbleRemoveListener() {
       @Override
       public void onBubbleRemoved(BubbleLayout bubble) {
-        lastX = bubble.getX();
-        lastY = bubble.getY();
+        // lastX = bubble.getX();
+        // lastY = bubble.getY();
         bubbleView = null;
         sendEvent("floating-bubble-remove");
       }
